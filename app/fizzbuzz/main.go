@@ -2,10 +2,10 @@ package main
 
 import "fmt"
 
-func fizzbuzz(fizzBuzzNum int) {
+func fizzbuzz(num int) {
 	count := 1
 
-	for count <= fizzBuzzNum {
+	for count <= num {
 		switch {
 		case count % 2 == 0 && count % 7 == 0:
 			fmt.Printf("%d is a fizzbuzz\n", count)
@@ -18,7 +18,7 @@ func fizzbuzz(fizzBuzzNum int) {
 		}
 
 		count++
-    }
+	}
 }
 
 func main() {
